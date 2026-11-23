@@ -1,0 +1,6 @@
+{
+  "name": "KuSOP Mobile",
+  "description": "Green mobility, commerce, and financial access super-app prototype featuring KuSOP Delivery, KuSOP Food, KuSOP Battery Swap, KuSOP EV Service, and an integrated Wallet.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

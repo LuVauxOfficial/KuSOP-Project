@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0D4A31" />
+    <title>KuSOP Mobile — Offline</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: #f8faf9;
+        color: #111827;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+      }
+      .card {
+        max-width: 400px;
+        width: 100%;
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 24px;
+        padding: 28px 24px;
+        text-align: center;
+      }
+      .badge {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        background: #0d4a31;
+        color: #ffffff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      h1 {
+        font-size: 20px;
+        margin: 0 0 8px;
+        color: #030712;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #4b5563;
+        margin: 0 0 20px;
+      }
+      button {
+        width: 100%;
+        min-height: 46px;
+        border: 0;
+        border-radius: 14px;
+        background: #0d4a31;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="badge" aria-hidden="true">K</div>
+      <h1>You are currently offline</h1>
+      <p>
+        KuSOP Mobile requires a network connection to fetch uncached pages. Your saved demonstration wallet and orders remain stored locally on this device.
+      </p>
+      <button type="button" onclick="window.location.reload()">Try Again</button>
+    </main>
+  </body>
+</html>

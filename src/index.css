@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-forest-950: #06281A;
+  --color-forest-900: #0D4A31;
+  --color-forest-800: #115E3F;
+  --color-forest-700: #15734E;
+  --color-fresh-600: #16A34A;
+  --color-fresh-500: #22C55E;
+  --color-mint-100: #E8F6EE;
+  --color-mint-50: #F2FBF6;
+}
+
+@layer base {
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+    overscroll-behavior-y: contain;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8FAF9;
+    color: #111827;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  button,
+  a,
+  select,
+  input,
+  textarea {
+    touch-action: manipulation;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
